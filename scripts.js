@@ -1,3 +1,19 @@
-const boton=document.getElementById("boton")
-let list=[1,2,3,4,5,2]
-console.log(list.append(4));
+const todoform=document.querySelector('form');
+const todoinput=document.getElementById('todo-input');
+const todoListUL=document.getElementById('todo-list');
+ let allTodos=[];
+todoform.addEventListener('submit',function(e){
+    e.preventDefault();
+    alert('test');
+
+})
+function addTodo(){
+    const todoText=todoinput.value;
+    alert(textText);
+
+}
+function addEventListener(){
+
+}
+
+
