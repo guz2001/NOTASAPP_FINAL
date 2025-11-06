@@ -50,14 +50,15 @@ h1{
 }
 #todo-input{
     box-sizing: border-box;
-    padding:12 px 10px;
+    padding:15 px 15px;
     width:100%;
     background:none;
-    border:2px solid var(--accent-color);
+    border:5px solid var(--accent-color);
     border-radius: 1000px;
     font:inherit;
     color:var(--text-color);
     caret-color:var(--accent-color);
+    text-align: center;
     
 }
 #todo-input:focus{
@@ -74,7 +75,7 @@ form{
     height:100%;
     background-color:var(--accent-color);
     border:none;
-    border-radius: 1000px;
+    border-radius: 500px;
     font:inherit;
     font-weight: 600;
     color:var(--background);
@@ -94,4 +95,11 @@ form{
     padding: 15px;
     padding-right:0;
     flex-grow: 1;
+}
+
+.raya{
+    background-color: white;
+    height: 5px;
+    margin: 0;
+    border:none;
 }
