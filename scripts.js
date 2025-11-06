@@ -2,9 +2,11 @@ const todoform=document.querySelector('form');
 const todoinput=document.getElementById('todo-input');
 const todoListUL=document.getElementById('todo-list');
  let allTodos=[];
-todoform.addEventListener('submit',function(e){
+
+
+todoform.addEventListener('submit',function(e){ //esta funcion lo que hace es que en vez de recargar la pagina sencillamente agrega la nueva tarea
     e.preventDefault();
-    addTodo();
+    addTodo();// llama la funcion que agrega tareas
 
 })
 function addTodo(){
@@ -41,6 +43,10 @@ function addTodo(){
     //limpiar input "entrada"
     todoListUL.appendChild(newLi);
     todoinput.value= " ";
+
+    function saveToLocalStorage(){
+        localStorage.setItem('todos',JSON.stringify(allTodos))//el JSON.stringfy convierte la lista en un texto para guardarlo y localStorage.setItem guarda la info en el navegaor
+    };
     // variable para crear el boton de borrar elemento
     const borrarBoton=document.createElement('button');
 
@@ -53,6 +59,15 @@ function addTodo(){
 
     newLi.classList.toggle('completed')
 });
+
+    // creamos la funcion del evento para borrar
+
+    newLi.addEventListener('clicl',function(){
+
+
+    });
+
+
 }
 
 
